@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.tabContainer{
+    display: grid;
+    grid-template-rows: 0.5fr 2fr;
+    min-height: 15rem;
+    width:30rem;
+    outline: 1px solid black;
+
+}
+
+.tabHead{
+    display: flex;
+    justify-content: space-between;
+    min-height: 2rem;
+    outline: 1px solid black;
+}
+
+.tabHead-1, .tabHead-2, .tabHead-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    outline: 1px solid black;
+}
+
+.tHactive{
+    background-color: antiquewhite;
+}
+
+.tabHead-1:hover, .tabHead-2:hover, .tabHead-3:hover{
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+
+.tabContent-1, .tabContent-2, .tabContent-3{
+    display: none;
+    padding: 1rem;
+}
+
+.active{
+    color: green;
+    display: block;
+}
